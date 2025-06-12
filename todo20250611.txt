@@ -1,0 +1,14 @@
+otameshi内のSparkJava.javaを実行するため、
+
+・otameshi/をsrc/main/java/otameshiに変更
+・Mavenをインストール（apache-maven-3.9.10）
+ → pom.xmlを編集
+・a.shでMavenとjavaを実行(mvnコマンド・javaコマンド)
+・java実行中(Webページ解説中)に、SparkJava.javaのPOSTリクエスト(curl 〜〜〜)を実行
+
+次：
+HTML→HTML形式のページ遷移
+Javaでのポート番号4567　→　アプリを開きたい
+(Pythonでの実行？機械学習結果？)
+
+といったページ遷移を一括で行えるようにする

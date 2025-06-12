@@ -1,0 +1,49 @@
+
+<html>
+  <head>
+    <title>People</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Selected People</h1>
+    <table border="1" class="dataframe" style="font-size:30px;">
+      <thead>
+          <tr style="text-align: right;">
+          <th>name</th>
+          <th>age</th>
+          <th>edit</th>
+          </tr>
+      </thead>
+      <tbody>
+          
+          <tr>
+          <td>Alice</td>
+          <td>25</td>
+          <td><button onclick="launchPythonApp()">Pythonアプリ起動</button></td>
+          </tr>
+          
+          <tr>
+          <td>Bob</td>
+          <td>30</td>
+          <td><button onclick="launchPythonApp()">Pythonアプリ起動</button></td>
+          </tr>
+          
+      </tbody>
+    </table>
+    <button onclick="launchJavaApp()">Javaアプリ起動</button>
+  </body>
+  <script>
+    function launchJavaApp() {
+      fetch('http://localhost:4567/run-script', { method: 'POST' })
+        .then(res => res.text())
+        .then(data => alert(data))
+        .catch(err => alert("エラー：" + err));
+      
+      window.location.href = "file:///Users/murakimika/wearing_website/a.sh";
+    }
+    function launchPythonApp() {
+      window.location.href = "file:///Users/murakimika/wearing_website/python_app_run.bat";
+    }
+    
+  </script>
+</html>

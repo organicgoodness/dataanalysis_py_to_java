@@ -1,0 +1,41 @@
+README.md
+apache-maven-3.9.10-bin：maven(windowsだとzip)https://maven.apache.org/download.cgi
+bat_and_sh/：.batファイル・.shファイル
+data_content.json：データの内容json形式
+index.html：データ閲覧ページ
+java_reading_json/：javaファイルからjsonファイルを読み込む
+javabuttonapp/：ボタンを押すとjavaコードが実行されるファイルを格納予定
+javabuttonapp_dataoutput.py：people.htmlを生成
+json-20250517.jar
+otameshi
+people.html：データの中身を出力・行の内容を訂正するボタン設置・~行目の値を確認・.shファイルを起動させるためのAPIをJavaScript部分で作成
+picture/：
+pythonfile/：pythonファイル
+src/main/java/otameshi/sparkjava/SparkJava.java：ポート番号4567に接続
+target：Maven実行結果
+todo20250603.txt
+
+[コマンド]
+Mvnコマンドを使用できるようにした：spark-coreを使用するため
+
+
+① ファイルa.sh作成
+#!/bin/bash
+echo "これはMac用のスクリプトです"
+ls
+
+② 実行権限を与える
+chmod +x ../../bat_and_sh/a.sh
+
+③ 実行する
+./../../bat_and_sh/a.sh
+または：
+bash ./../../bat_and_sh/a.sh
+
+
+フロントエンド：HTML・CSS・
+
+バックエンド：Python・PHP・SQL・JavaScript・Java
+
+その他ツール：.bat→？？・Laravel・Github・json
+・HomeBrew：docker-composeのインストール

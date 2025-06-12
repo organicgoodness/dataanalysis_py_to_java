@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Alice",
+        "age": 25,
+        "title": "Nice to meet you!"
+    },
+    {
+        "name": "Bob",
+        "age": 30,
+        "title": "Nice to meet you!"
+    },
+    {
+        "name": "Mike",
+        "age": 5,
+        "title": "Nice to meet you!"
+    }
+]

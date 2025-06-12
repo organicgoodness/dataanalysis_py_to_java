@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My Fashion Store</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      background: #f8f8f8;
+    }
+    header {
+      background-color: #111;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2em auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+    }
+    .item {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .item:hover {
+      transform: scale(1.02);
+    }
+    .item img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    .item .info {
+      padding: 1em;
+    }
+    .item h3 {
+      margin: 0 0 0.5em;
+    }
+    .header_flex {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        max-width: 100%;
+        margin: 2em auto;
+        border: 1px solid #ccc;
+    }
+    /* 全体のアイテム共通の見た目 */
+    .header1 {
+        padding: 1em;
+        background-color: #333;
+        border: 1px solid #999;
+        /* ここに justify-self や text-align は入れない */
+    }
+    /* 👇 centerクラスだけ中央寄せ */
+    .header1.center {
+        justify-self: center;   /* Gridのセル内で横中央に配置 */
+        text-align: center;     /* テキストも中央に */
+    }
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1em;
+      background-color: #333;
+      color: white;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background-color: #555;
+    }
+
+    .btn_back {
+        display: inline-block;
+        margin-top: 0em;
+        background-color: rgb(163, 239, 201);
+        color: rgb(57, 50, 5);
+        padding: 0.5em 1em;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .btn_back:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header_flex">
+        <div class="header1"><a href="#" class="btn_back">戻る</a></div>
+        <div class="header1 center">
+            <h1>Data Page</h1>
+            <p>データ分析結果</p><!--<p>スタイリッシュな洋服が世界を良くする</p>-->
+        </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="item">
+      <div class="info">
+        <h3>メッセージデータ</h3>
+        <p class="price">¥7,980</p>
+        <a href="リンク先.html" class="btn">データを見る</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="info">
+        <h3>データ2</h3>
+        <p class="price">¥2,500</p>
+        <a href="#" class="btn">データを見る</a>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="info">
+        <h3>データ3</h3>
+        <p class="price">¥5,980</p>
+        <a href="#" class="btn">データを見る</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

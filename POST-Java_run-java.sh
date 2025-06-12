@@ -1,0 +1,1 @@
+curl -X POST http://localhost:4567/run-java
